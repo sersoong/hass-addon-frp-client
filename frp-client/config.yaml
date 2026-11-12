@@ -18,6 +18,7 @@ arch:
   - armhf
   - armv7
   - i386
+image: "registry.songweilin.com/public/hass/amd64-addon-frp_client:1.0.2"
 options:
   serverAddr: "example.com"
   serverPort: 7000
