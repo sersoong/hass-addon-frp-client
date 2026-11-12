@@ -1,8 +1,7 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
+FROM ghcr.io/home-assistant/base:3.24
 
 ARG BUILD_ARCH
-ARG FRP_VERSION
+ARG FRP_VERSION=0.72.0
 
 COPY bootstrap.sh /
 COPY run.sh /

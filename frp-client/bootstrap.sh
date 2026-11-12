@@ -1,23 +1,23 @@
 #!/usr/bin/env bashio
-build_arch=$1
-frp_version=$2
+frp_version=$1
 
 frp_url="https://github.com/fatedier/frp/releases/download/"
 app_path="/usr/src"
 
 function select_machine() {
     local machine;
+    build_arch=${uname -m}
     case $build_arch in
         "aarch64")
             machine="arm64"
         ;;
-        "amd64")
+        "x86_64")
             machine="amd64"
         ;;
-        "armhf")
+        "armv6l")
             machine="arm"
         ;;
-        "armv7")
+        "armv7l")
             machine="arm"
         ;;
         "i386")
