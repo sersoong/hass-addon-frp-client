@@ -6,7 +6,7 @@ app_path="/usr/src"
 
 function select_machine() {
     local machine;
-    build_arch=${uname -m}
+    build_arch=$(uname -m)
     case $build_arch in
         "aarch64")
             machine="arm64"
